@@ -18,5 +18,5 @@ DEGREES SecurityStudent::GetDegreeProgram() const {
 
 void SecurityStudent::print() {
 	Student::print();
-	cout << "Degree Type: " << DEGREE_STRINGS[degreeType] << "\n";
+	cout << "\tDegree Type: " << DEGREE_STRINGS[degreeType] << endl;
 }

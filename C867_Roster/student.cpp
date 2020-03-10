@@ -66,13 +66,10 @@ void Student::SetDegreeType(DEGREES newDegreeType) {
 }
 
 // Methods
-void Student::print() { 
-	// cout << "STUDENT INFORMATION\n";
-	cout << "----------------------------\n";
-	cout << "Student ID: " << studentID << "\n";
-	cout << "First Name: " << firstName << "\n";
-	cout << "Last Name: " << lastName << "\n";
-	cout << "Email Address: " << emailAddress << "\n";
-	cout << "Age: " << age << "\n";
-	cout << "Days To Complete Three Courses: " << studentID << endl;
+void Student::print() {
+	cout << "First Name: " << GetFirstName() << " \t" 
+		<< "Last Name: " << GetLastName() << " \t"
+		<< "Email Address: " << GetEmailAddress() << " \t"
+		<< "Age: " << GetAge() << " \t"
+		<< "Days In Three Courses: {"; cout << GetDaysToCompleteThreeCourses()[0] << ", " << GetDaysToCompleteThreeCourses()[1] << ", " << GetDaysToCompleteThreeCourses()[2] << "}";
 };

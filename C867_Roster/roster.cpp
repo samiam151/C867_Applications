@@ -20,6 +20,7 @@ Roster::Roster() {
 }
 
 Roster::~Roster() {
+	cout << "---------------------------------" << endl;
 	for (int i = 0; i < 5; i++)
 	{
 		if (classRosterArray[i] != NULL) {
@@ -144,6 +145,8 @@ void Roster::printByDegreeProgram(DEGREES degreeProgram) {
 };
 
 void main() {
+	cout << "Scripting and Programming-Applications-C867\t" << "Language: C++\t" << "StudentID: 001249697\t" << "Name: Nicolas Sam" << endl << endl;
+
 	Roster classRoster = Roster();
 	const string studentData[] = { 
 		"A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
